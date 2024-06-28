@@ -84,7 +84,7 @@ def logout():
 
     session.pop('user_id', None)
 
-    return '', 204
+    return '', 401
 
 @app.route('/recipes', methods=['GET', 'POST'])
 def recipes():
